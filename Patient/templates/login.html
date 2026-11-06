@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block title %}Login{% endblock %}
+{% load static %}
+{% block content %}
+
     <h2>Login Form</h2>
+    <img src="{% static 'images/vitalworks-hospital-ward-1338585_1920.jpg' %}" alt="">
     <form method="post">
         {% csrf_token %}
         <label for="username">Username:</label>
@@ -17,5 +15,6 @@
         <br><br>
         <button type="submit" >Login</button>
     </form>
-</body>
-</html>
+
+{% endblock %}
+

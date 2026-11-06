@@ -1,12 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patient Register Form</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block title %}Register{% endblock %}
+{% block content %}
+{% load static %}
+
+
     <h2>Register Here</h2>
-    
-</body>
-</html>
+    <img src="{% static 'images/parentingupstream-hospital-840135_1920.jpg' %}" alt="">
+
+
+
+{% endblock %}
